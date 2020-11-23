@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Olga Shketina</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header flex-container fixed-container" id="up">
+      <div class="header__logo">
+        Shket
+      </div>
+
+      <a class="header__menu_btn-burger icon-menu-outline"></a>
+
+      <menu class="header__menu">
+        <li class="header__menu_btn-close icon-cancel-outline"></li>
+        <li><a class="header__menu_item" href="#portfol">Портфолио</a></li>
+        <li><a class="header__menu_item" href="#git">GitHub</a></li>
+        <li><a class="header__menu_item" href="#communicate">Контакты</a></li>
+      </menu>
+    </header>
+
+    <main>
+      <section class="cover flex-container fixed-container">
+        <div class="cover__container">
+          <div class="cover__img" id="portfol">
+            <img src="img/pewpew.png" alt="">
+          </div>
+
+          <div class="cover__line-container">
+            <div class="cover__line"></div>
+          </div>
+        </div>
+
+        <div class="cover__portrait">
+          <div class="cover__header">
+            <h1 class="cover__header_name">Ольга Шкетина</h1>
+            <h2 class="cover__header_text">Веб-верстка и frontend-разработка</h2>
+          </div>
+          <p class="cover__text">&#149;Адаптивная вёрстка landing page и сайтов любой сложности</p>
+          <p class="cover__text">&#149;Навыки: HTML5, CSS3, jQuery, jQ-plugins, PixelPerfect, Flexbox, БЭМ, SVG, Canvas, Git, Adobe Photoshop</p>
+          <p class="cover__text cover__text-small">*Сайт написан без макета</p>
+        </div>
+
+        <div class="fixed_btn_call">
+          <a class="icon-phone-circled" href="tel:79811252833"></a>
+        </div>
+
+        <div class="fixed_btn_up">
+          <a class="icon-up" href="#up">Наверх</a>
+        </div>
+      </section>
+
+      <section class="portfolio flex-contsiner fixed-container">
+        <h2 class="visually-hidden">Примеры моих работ</h2>
+
+        <div class="portfolio__container">
+          <div class="portfolio__frame">
+            <a href="http://shketina.ru/losev" target="_blank"><div class="portfolio__block portfolio__block_losev"></div></a>
+
+            <div class="portfolio__wrap_text">
+              <h3 class="portfolio__header">Артём Лосев</h3>
+              <p class="portfolio__text">Сайт написан на заказ для фотографа Артёма Лосева</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__container">
+          <div class="portfolio__frame portfolio__frame_central">
+            <a href="http://shketina.ru/developer" target="_blank"><div class="portfolio__block portfolio__block_developer"></div></a>
+
+            <div class="portfolio__wrap_text">
+              <h3 class="portfolio__header portfolio__header_central">Дмитрий Алексеев</h3>
+              <p class="portfolio__text portfolio__text_central">Дипломный проект по курсу "Веб-верстка"</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__container">
+          <div class="portfolio__frame">
+            <a href="http://shketina.ru/news_agency" target="_blank"><div class="portfolio__block portfolio__block_newsagency"></div></a>
+
+            <div class="portfolio__wrap_text">
+              <h3 class="portfolio__header">Новостное агентство</h3>
+              <p class="portfolio__text">Пример адаптивной верстки сайта (учебная работа)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="github fixed-container" id="git">
+        <h2 class="github__header">GitHub</h2>
+
+        <div class="github__container flex-container">
+          <a class="github__link" href="https://github.com/Aleks315/Portfolio" target="_blank">Olga Shketina</a>
+
+          <a class="github__link" href="https://github.com/Aleks315/Losev" target="_blank">Артем Лосев</a>
+
+          <a class="github__link" href="https://github.com/Aleks315/Developer" target="_blank">Дмитрий Алексеев</a>
+
+          <a class="github__link" href="https://github.com/Aleks315/News_Agency" target="_blank">Новостное агентство</a>
+        </div>
+      </section>
+
+      <section class="communication fixed-container" id="communicate">
+        <h2 class="communication__header">Контакты</h2>
+
+        <div class="communication__container flex-container">
+          <div class="communication__contacts">
+            <a class="icon-phone"></a>
+            <h3 class="communication__item">Телефон</h3>
+            <p class="communication__item">+7 (981) 125-28-33</p>
+          </div>
+
+          <div class="communication__line"></div>
+
+          <div class="communication__contacts">
+            <a class="icon-mail"></a>
+            <h3 class="communication__item">Почта</h3>
+            <p class="communication__item">Helga.fl315@mail.ru</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer flex-container">
+      <p class="footer__copyright">&copy; Olga Shketina, 2020</p>
+    </footer>
+  </body>
+</html>
